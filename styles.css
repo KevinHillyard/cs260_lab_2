@@ -1,0 +1,275 @@
+* {
+  color: #000000;
+  background-color: #696969;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-title {
+  color: #000000 !important;
+  font-family: "Garamond", serif !important;
+  font-weight: bold  !important;
+  font-size: 1.2em !important;
+}
+
+.navbar-toggler {
+  background-color: #F8F8FF !important;
+}
+
+.navbar-collapse ul {
+  background-color: #DEB887;
+}
+
+.navbar-collapse li {
+  background-color: #DEB887;
+  padding-left: 10px;
+}
+
+.navbar-collapse li:hover {
+  background-color: #696969;
+}
+
+.nav-link {
+  font-family: "Garamond", serif !important;
+  font-weight: bold  !important;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+.header h1 {
+  border-bottom: 2px solid #DEB887;
+}
+
+.price-header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+.price-header h1 {
+  border-bottom: 2px solid #DEB887;
+}
+
+.owners-container {
+  padding-top: 50px;
+}
+
+.owners-container h2 {
+  border-bottom: 2px solid #DEB887;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  padding-top: 30px;
+}
+
+.about-container h2 {
+  border-bottom: 1px solid #DEB887;
+}
+
+.about-paragraph {
+  font-size: 85%;
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.owner-photo-grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+
+.owner-photo-grid-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.gallery-photo-grid {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.gallery-photo-grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px 30px 30px;
+}
+
+.gallery-photo-grid-item img {
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.first-item {
+  order: -1;
+}
+
+.last-item {
+  order: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: #DEB887;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  flex-direction: column;
+}
+
+.footer-item {
+  display: flex;
+  background-color: #DEB887;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-item p {
+  color: #000000;
+  background-color: #DEB887;
+  font-size: 60%;
+}
+
+.owner-photo-link img {
+  border-radius: 8px;
+  padding: 5px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.gif-picture-container {
+  padding: 10px 0 10px 0;
+}
+
+.gif-picture-container img {
+  border-radius: 8px;
+}
+
+.ammo-photo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.ammo-photo-container img {
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.price-list {
+  list-style-type: square;
+}
+
+.price-list-item {
+  color: #DCDCDC !important;
+  font-family: "Georgia", serif !important;
+  font-size: 1.2em;
+}
+
+.payment-note {
+  color: #DCDCDC !important;
+  font-family: "Georgia", serif !important;
+  font-weight: bold;
+  font-size: 70%;
+  padding-top: 100px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 60%;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.emails-container,
+.phone-container,
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.emails,
+.social-medias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-title {
+  border-bottom: 1px solid #DEB887;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Garamond", serif !important;
+  color: #DCDCDC !important;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Garamond", serif !important;
+  color: #DCDCDC !important;
+}
+
+p {
+  font-family: "Georgia", serif !important;
+  color: #DCDCDC !important;
+}
+
+.gallery-photo-grid-item img:hover,
+.owner-photo-link img:hover {
+  box-shadow: 0 0 2px 1px #DEB887;
+}
