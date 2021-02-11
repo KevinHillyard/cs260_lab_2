@@ -166,7 +166,7 @@
   justify-content: center;
 }
 
-.footer-item p {
+.footer-item a {
   color: #000000;
   background-color: #DEB887;
   font-size: 60%;
