@@ -46,9 +46,13 @@
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   padding-bottom: 50px;
   padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .header h1 {
@@ -59,7 +63,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .price-header h1 {
@@ -109,29 +113,6 @@
   height: 200px;
 }
 
-.gallery-photo-grid {
-  width: 75%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.gallery-photo-grid-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 30px 30px 30px;
-}
-
-.gallery-photo-grid-item img {
-  width: 500px;
-  height: 500px;
-  border-radius: 8px;
-  padding: 5px;
-}
-
 .first-item {
   order: -1;
 }
@@ -177,23 +158,15 @@
   padding: 10px 0 10px 0;
 }
 
-.ammo-photo-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-}
-
-.ammo-photo-container img {
-  border-radius: 8px;
-  padding: 5px;
-}
-
 .price-list {
   list-style-type: square;
 }
 
+.price-list-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
 .price-list-item {
   color: #DCDCDC !important;
   font-family: "Georgia", serif !important;
@@ -205,12 +178,11 @@
   font-family: "Georgia", serif !important;
   font-weight: bold;
   font-size: 70%;
-  padding-top: 100px;
+  padding: 100px 50px 0 50px;
 }
 
 .emails-container,
-.phone-container,
-.social-media-container {
+.phone-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -222,6 +194,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 60%;
 }
 
 .contact-title {
@@ -263,6 +236,13 @@ p {
     padding-bottom: 60px;
   }
 
+  .social-media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .emails {
     display: flex;
     flex-direction: column;
@@ -282,6 +262,44 @@ p {
     border-radius: 8px;
     max-width: 200px;
   }
+
+  .gallery-photo-grid {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .gallery-photo-grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px 15px 15px;
+  }
+
+  .gallery-photo-grid-item img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 8px;
+    padding: 5px;
+  }
+
+  .ammo-photo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+
+  .ammo-photo-container img {
+    border-radius: 8px;
+    padding: 5px;
+    max-width: 300px;
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -290,10 +308,17 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 60%;
     padding-top: 30px;
     padding-bottom: 60px;
+  }
+
+  .social-media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .emails {
@@ -312,5 +337,41 @@ p {
 
   .gif-picture-container img {
     border-radius: 8px;
+  }
+
+  .gallery-photo-grid {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .gallery-photo-grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 30px 30px;
+  }
+
+  .gallery-photo-grid-item img {
+    width: 500px;
+    height: 500px;
+    border-radius: 8px;
+    padding: 5px;
+  }
+
+  .ammo-photo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+
+  .ammo-photo-container img {
+    border-radius: 8px;
+    padding: 5px;
   }
 }
